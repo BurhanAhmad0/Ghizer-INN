@@ -23,7 +23,7 @@
 .ourRooms,
 .whatPeopleSays,
 .exploreOurServices {
-  padding: 4rem 4rem;
+  padding: 0;
 }
 
 .aboutUs .aboutUsContainer,
@@ -113,5 +113,12 @@ h2 {
 @media (width >= 48rem) {
   .navBar {
     padding: 30px 60px;
+  }
+
+  .aboutUs,
+  .ourRooms,
+  .whatPeopleSays,
+  .exploreOurServices {
+    padding: 4rem;
   }
 }
