@@ -23,7 +23,7 @@
 .ourRooms,
 .whatPeopleSays,
 .exploreOurServices {
-  padding: 0;
+  padding: 1rem;
 }
 
 .aboutUs .aboutUsContainer,
