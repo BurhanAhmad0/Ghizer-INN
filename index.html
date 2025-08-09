@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghizer Inn | Giglit Pakistan</title>
+
+    <!-- Importing CSS file -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Importing Tailwind CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header id="home"
+        class="navBar relative h-screen bg-[url('./assets/bg-primary.jpg')] bg-cover bg-center bg-no-repeat flex flex-col">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/20 "></div>
+
+        <!-- Navbar -->
+        <nav class="relative z-10 flex items-center justify-between px-8 py-6">
+            <h1 class="text-2xl font-bold text-white">Ghizer <span class="text-orange-500">Inn</span></h1>
+            <ul class="hidden md:flex gap-5 text-white font-medium">
+                <li class="cursor-pointer"><a href="#home">Home</a></li>
+                <li class="cursor-pointer"><a href="#about">About</a></li>
+                <li class="cursor-pointer"><a href="#rooms">Rooms</a></li>
+                <li class="cursor-pointer"><a href="#reviews">Testimonials</a></li>
+                <li class="cursor-pointer"><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="text-white font-medium">Login</button>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="headerContent relative z-10 flex-1 flex items-center px-8 md:px-20">
+            <div class="max-w-xl text-white flex flex-col gap-4">
+                <p class="text-lg mb-2">Welcome To</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Hotel <span class="text-orange-500">GhizerInn</span><br /> Giglit Pakistan
+                </h1>
+                <p class="mt-5 text-gray-200 text-sm md:text-base">
+                    Crafted in the heart of Ghizer Gahkuch, near the Sabzi Mandi,
+                    on the main Ghizer–Shandoor Road. Perfect stay with free parking,
+                    fast Wi-Fi, breakfast included, and scenic surroundings.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <button
+                        class="btn bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg cursor-pointer transition-all duration-300">Book
+                        Now</button>
+                    <button
+                        class="btn border-2 border-white px-6 py-3 rounded-lg cursor-pointer hover:bg-white hover:text-black transition-all duration-300">Explore
+                        More</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="about" class="aboutUs bg-white">
+            <div class="aboutUsContainer max-w-6xl">
+
+                <!-- Section Title -->
+                <div class="title text-center">
+                    <p class="text-gray-700 text-sm flex items-center justify-center gap-2">
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                        <span>About Us</span>
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                    </p>
+                </div>
+
+                <!-- History of JustStay -->
+                <div class="historyOfJustStay grid md:grid-cols-2 gap-10 items-center">
+                    <img src="./assets/hall-1.jpg" alt="Ghizer INN"
+                        class="rounded-3xl shadow-lg outline outline-gray-400 outline-offset-16">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">
+                            Welcome to <span class="text-orange-500">Ghizer INN Hotel & Restaurant</span>
+                        </h2>
+                        <p class="para1 text-gray-600 mb-4">
+                            Crafted in the heart of Ghizer Gahkuch, the headquarters of the district, Ghizer INN offers
+                            comfort and convenience.
+                            Located on the main Ghizer–Shandoor Road near Sabzi Mandi Gahkuch, we are perfectly
+                            positioned for both leisure and business stays.
+                        </p>
+                        <p class="para2 text-gray-500 mb-6">
+                            Enjoy basic amenities including free parking, fast Wi-Fi, easy access to the market,
+                            breakfast included, balconies, restrooms, and 24/7 hot water.
+                            Whether you’re visiting for work, relaxation, or adventure, we make your stay memorable.
+                        </p>
+                        <button
+                            class="btn border border-orange-500 text-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition duration-300 cursor-pointer">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="whyChooseUs grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Why Choose Us?</h2>
+                        <ul class="list flex flex-col gap-4 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <img src="./assets/icons/location.svg" alt="Location" class="w-6 h-6 mr-3">
+                                Prime location in the heart of Ghizer, Gahkuch
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="./assets/icons/wifi.svg" alt="WiFi" class="w-6 h-6 mr-3">
+                                Free high-speed Wi-Fi
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="./assets/icons/bed.svg" alt="Comfort" class="w-6 h-6 mr-3">
+                                Comfortable rooms with balcony views
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="./assets/icons/breakfast.svg" alt="Breakfast" class="w-6 h-6 mr-3">
+                                Breakfast
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="./assets/icons/parking.svg" alt="Parking" class="w-6 h-6 mr-3">
+                                Free secure parking
+                            </li>
+                        </ul>
+                        <button
+                            class="btn border border-orange-500 text-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition duration-300 cursor-pointer">
+                            Read More
+                        </button>
+                    </div>
+                    <img src="./assets/hall-2.jpg" alt="Ghizer INN"
+                        class="rounded-3xl shadow-lg outline outline-gray-400 outline-offset-16">
+                </div>
+
+            </div>
+        </section>
+
+        <div class="stats-bar bg-orange-500 flex justify-around items-center text-white font-bold">
+            <div class="text-center">
+                <p class="text-3xl">8</p>
+                <p class="text-sm font-normal">Years of Service</p>
+            </div>
+            <div class="text-center">
+                <p class="text-3xl">459</p>
+                <p class="text-sm font-normal">Sq. Meter Area</p>
+            </div>
+            <div class="text-center">
+                <p class="text-3xl">50</p>
+                <p class="text-sm font-normal">Nice Rooms</p>
+            </div>
+            <div class="text-center">
+                <p class="text-3xl">3786</p>
+                <p class="text-sm font-normal">Happy Visitors</p>
+            </div>
+        </div>
+
+        <section id="rooms" class="ourRooms bg-white bg-gradient-to-b from-transparent via-gray-100/50 to-gray-100/100">
+            <div class="ourRoomsContainer max-w-6xl">
+
+                <!-- Section Title -->
+                <div class="title text-center">
+                    <p class="text-gray-700 text-sm flex items-center justify-center gap-2">
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                        <span>Our Rooms</span>
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                    </p>
+                </div>
+
+                <h2 class=" text-center text-4xl font-bold">Explore Our <span class="text-orange-500">Rooms</span></h2>
+
+                <div class="roomCards flex items-center gap-7">
+
+                    <div class="card card1 bg-white text-center">
+                        <img src="./assets/juniorSuite.jpg" alt="JUNIOR SUITE">
+                        <div class="info">
+                            <p>JUNIOR SUITE</p>
+                            <p>$180 / per night</p>
+                        </div>
+                    </div>
+
+                    <div class="card card2 bg-white text-center">
+                        <img src="./assets/executiveSuite.jpg" alt="EXECUTIVE SUITE">
+                        <div class="info">
+                            <p>EXECUTIVE SUITE</p>
+                            <p>$180 / per night</p>
+                        </div>
+                    </div>
+
+                    <div class="card card3 bg-white text-center">
+                        <img src="./assets/superDeluxSuite.jpg" alt="SUPERDELUX SUITE">
+                        <div class="info">
+                            <p>SUPERDELUX SUITE</p>
+                            <p>$180 / per night</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="exploreOurServices bg-white">
+            <div class="exploreOurServicesContainer max-w-6xl">
+
+                <!-- Section Title -->
+                <div class="title text-center">
+                    <p class="text-gray-700 text-sm flex items-center justify-center gap-2">
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                        <span>Our Services</span>
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                    </p>
+                </div>
+
+                <h2 class=" text-center text-4xl font-bold">Explore Our <span class="text-orange-500">Services</span>
+                </h2>
+
+                <div class="serviceCards flex items-center gap-7">
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/apartment.svg" alt="">
+
+                        <h3 class="font-bold text-center">Rooms and Apartments</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/sports.svg" alt="">
+
+                        <h3 class="font-bold text-center">Sports and Gaming</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/food.svg" alt="">
+
+                        <h3 class="font-bold text-center">Food and Restaurants</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                </div>
+
+                <div class="serviceCards flex items-center gap-7">
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/spa.svg" alt="">
+
+                        <h3 class="font-bold text-center">SPA and Fitness</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/party.svg" alt="">
+
+                        <h3 class="font-bold text-center">Event and Party</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                    <div class="serviceCard serviceCard1 flex flex-col items-center justify-center gap-4">
+                        <img class="w-8 h-8" src="./assets/icons/gym.svg" alt="">
+
+                        <h3 class="font-bold text-center">GYM and Yoga</h3>
+                        <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                            reiciendis.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="whatPeopleSays bg-white">
+            <div class="whatPeopleSaysContainer max-w-6xl">
+
+                <!-- Section Title -->
+                <div class="title text-center">
+                    <p class="text-gray-700 text-sm flex items-center justify-center gap-2">
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                        <span>Testimonials</span>
+                        <span class="block w-8 h-[2px] bg-gray-300"></span>
+                    </p>
+                </div>
+
+                <h2 class=" text-center text-4xl font-bold">What People <span class="text-orange-500">Says?</span></h2>
+
+                <div class="reviewCards flex items-center gap-7">
+
+                    <div class="reviewCard reviewCard1 flex flex-col items-center">
+                        <img class="w-8 h-8" src="./assets/icons/quotes.svg" alt="">
+
+                        <p class="reviewText text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum quam
+                            ipsum architecto animi
+                            provident distinctio non porro voluptas odit doloremque!</p>
+
+                        <h3 class="font-bold">James Conner</h3>
+                        <p>james78@gmail.com</p>
+                    </div>
+
+                    <div class="reviewCard reviewCard2 flex flex-col items-center">
+                        <img class="w-8 h-8" src="./assets/icons/quotes.svg" alt="">
+
+                        <p class="reviewText text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum quam
+                            ipsum architecto animi
+                            provident distinctio non porro voluptas odit doloremque!</p>
+
+                        <h3 class="font-bold">James Conner</h3>
+                        <p>james78@gmail.com</p>
+                    </div>
+
+                    <div class="reviewCard reviewCard3 flex flex-col items-center">
+                        <img class="w-8 h-8" src="./assets/icons/quotes.svg" alt="">
+
+                        <p class="reviewText text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum quam
+                            ipsum architecto animi
+                            provident distinctio non porro voluptas odit doloremque!</p>
+
+                        <h3 class="font-bold">James Conner</h3>
+                        <p>james78@gmail.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="footer grid grid-cols-5">
+        <div class="footerLogo">
+            <h1 class="text-2xl font-bold text-black">Ghizer <span class="text-orange-500">Inn</span></h1>
+            <p class="footerDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quia nostrum?
+            </p>
+            <p>ghizer@gmail.com</p>
+        </div>
+        <div class="quickLinks">
+            <h3 class="font-bold text-xl">Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="quickLinks">
+            <h3 class="font-bold text-xl">Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="quickLinks">
+            <h3 class="font-bold text-xl">Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="quickLinks">
+            <h3 class="font-bold text-xl">Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
